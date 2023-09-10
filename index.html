@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="leftSide">
+                <img src="image/img1.jpg" alt="">
+            </div>
+            <div class="rightSide">
+                <h1>Crie uma conta</h1>
+                <form action="" class="b7validator">
+                    <div class="formGroup">
+                        <label for="inName">Seu Nome:</label>
+                        <input type="text" name="name" id="inName" required placeholder="Ex: João Silva">
+                    </div>
+                    <div class="formGroup">
+                        <label for="inEmail">Seu e-mail:</label>
+                        <input type="email" name="e-mail" id="inEmail" required placeholder="Ex: joao@gmail.com"
+                            pattern="^([\w\-]+\.)*[\w\- ]+@([\w\- ]+\.)+([\w\-]{2,3})$">
+                    </div>
+                    <div class="formGroup">
+                        <label for="inPassword">Sua senha:</label>
+                        <input type="password" name="password" id="inPassword" required minlength="6">
+                    </div>
+                    <div class="formGroup button">
+                        <input type="submit" id="inButton" value="Cadastrar" class="button">
+                    </div>
+                </form>
+                <div class="login">
+                    <p>Já tem uma conta? <a href="#">Faça o login.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
